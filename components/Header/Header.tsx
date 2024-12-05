@@ -1,15 +1,18 @@
 import Link from 'next/link'
 import React from 'react'
+import styles from './Header.module.css'
+
 
 export default function Header() {
   return (
-  <header className="p-5 bd-none text-red font-bold">
-    <h1 className='mb-3 text-center'>
+  <header className={styles.header}>
+    <h1 className={styles.title}>
         Lab 11: React & Next.js</h1>
-    <nav className='max-w-screen-lg display-flex flex-row justify-center gap-30'>
-        <Link href="/" className='text-white'>
+    <nav className={styles.nav}>
+        <Link href="/">
         Home</Link>
     </nav>
   </header>
   )
+  
 }
