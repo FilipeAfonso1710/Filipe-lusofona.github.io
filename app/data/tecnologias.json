@@ -1,0 +1,33 @@
+[ {
+    "title":"HTML",
+    "image":"https://media.licdn.com/dms/image/D5612AQGHR-FEVGwWFQ/article-cover_image-shrink_600_2000/0/1693497056904?e=2147483647&v=beta&t=9ag2aCQ-isAnkNqvDZfSzZfsnvtaEjxkrDakP2uZpTI",
+    "description":"O esqueleto de uma página web !!!",
+    "rating":"8.0"
+   },
+   {
+        "title":"CSS",
+        "image":"https://cdn.icon-icons.com/icons2/2415/PNG/512/css_plain_wordmark_logo_icon_146574.png",
+        "description":"O rosto da sua página",
+        "rating":"8.0"
+    },{
+        "title":"JavaScript",
+        "image":"https://banner2.cleanpng.com/20180720/pjj/b82ef7718084fb54502ed8f23a232ffc.webp",
+        "description":"O motor de uma página",
+        "rating":"7.0"
+    },{
+        "title":"API RESTful",
+        "image":"https://chisellabs.com/glossary/wp-content/uploads/2021/06/What-is-an-API.png",
+        "description":"Informação de uma página",
+        "rating":"6.0"
+    },{
+        "title":"GitHub",
+        "image":"https://github.blog/wp-content/uploads/2024/07/github-logo.png",
+        "description":"Forum para programadores",
+        "rating":"9.0"
+    },{
+        "title":"React.js e Next.js",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXqZRg7aJcCVNeA-YoHlNZeVdTSH7mP5fFwQ&s",
+        "description":"Forma de programa a sua página mais fácil",
+        "rating":"8.0"
+    }
+]

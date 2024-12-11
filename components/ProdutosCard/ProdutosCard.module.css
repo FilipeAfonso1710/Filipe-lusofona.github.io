@@ -1,0 +1,32 @@
+
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+    .image{
+    color: black;
+    }
+ 
+ }
+.descricao{
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ .p{
+ font-weight: bold;
+ font-size :large;
+ font-family: 'Courier New', Courier, monospace;
+ }
+ 
+ .image{
+    margin-top: 20px;
+ }
+
