@@ -5,7 +5,7 @@ import useSWR from 'swr'
 import ProdutosCard from '@/components/ProdutosCard/ProdutosCard'
 
 
-export default function page() {
+export default function Page() {
 
   //fun para passar a string da API para json
   const fetcher = (url: string) => fetch(url).then(res => res.json())
@@ -19,9 +19,10 @@ export default function page() {
   return <>
     {data.map(produto => (
       <ProdutosCard
+        key={produto.id}
         title={produto.title}
         description={produto.description} 
-        id={''} 
+        id={produto.id} 
         price={produto.price}
          image={produto.image} />
     ))}
