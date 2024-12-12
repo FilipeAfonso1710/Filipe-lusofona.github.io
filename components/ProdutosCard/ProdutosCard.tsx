@@ -1,4 +1,3 @@
-import { Produtos } from '@/models/interface'
 import React from 'react'
 import Style from './ProdutosCard.module.css'
 import Image from 'next/image'

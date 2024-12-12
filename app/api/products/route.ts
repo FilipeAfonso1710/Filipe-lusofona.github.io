@@ -1,4 +1,3 @@
-import { json } from "stream/consumers";
 
 export async function GET(){
     return fetch('https://deisishop.pythonanywhere.com/products/')

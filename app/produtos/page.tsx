@@ -2,7 +2,6 @@
 
 import React from 'react'
 import useSWR from 'swr'
-import { Produtos } from '@/models/interface'
 import ProdutosCard from '@/components/ProdutosCard/ProdutosCard'
 
 
