@@ -4,15 +4,6 @@ import Style from './ProdutosCard.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
-/*
-<Image 
-      src={image}
-      alt="imagem do produto"
-      width={70}
-      height={70}
-      />
-*/
-
 
 export default function ProdutosCard({id, title, price, description, image}:Produtos) {
 
