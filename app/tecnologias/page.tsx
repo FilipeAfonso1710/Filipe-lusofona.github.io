@@ -1,18 +1,17 @@
 import React from 'react'
 import tecnologias from '@/app/data/tecnologias.json';
-import ProdutosCard from '@/components/ProdutosCard/ProdutosCard';
+import TecnologiasCard from '@/components/TecnologiasCard/TecnologiasCard';
 
 export default function page() {
   
   return <> 
    {tecnologias.map((tecnologia: { title: string; description: string; rating: string; image: string; })=> (
-         <ProdutosCard
+         <TecnologiasCard
            title={tecnologia.title}
            description={tecnologia.description} 
-           id={''} 
-           price={tecnologia.rating}
+           rating={tecnologia.rating}
             image={tecnologia.image} />
        ))}
-  )
+  
   </>
 }

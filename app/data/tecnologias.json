@@ -1,32 +1,32 @@
 [ {
     "title":"HTML",
-    "image":"/workspaces/filipeafonso1710.github.io.next/public/images/HTML.png",
+    "image":"/images/HTML.jpg",
     "description":"O esqueleto de uma página web !!!",
     "rating":"8.0"
    },
    {
         "title":"CSS",
-        "image":"/workspaces/filipeafonso1710.github.io.next/public/images/CSS.png",
+        "image":"/images/CSS.png",
         "description":"O rosto da sua página",
         "rating":"8.0"
     },{
         "title":"JavaScript",
-        "image":"/workspaces/filipeafonso1710.github.io.next/public/images/JS.webp",
+        "image":"/images/JS.webp",
         "description":"O motor de uma página",
         "rating":"7.0"
     },{
         "title":"API RESTful",
-        "image":"/workspaces/filipeafonso1710.github.io.next/public/images/API.png",
+        "image":"/images/API.png",
         "description":"Informação de uma página",
         "rating":"6.0"
     },{
         "title":"GitHub",
-        "image":"/workspaces/filipeafonso1710.github.io.next/public/images/GITHUB.webp",
+        "image":"/images/GITHUB.webp",
         "description":"Forum para programadores",
         "rating":"9.0"
     },{
         "title":"React.js e Next.js",
-        "image":"/workspaces/filipeafonso1710.github.io.next/public/images/JSeNEXT.png",
+        "image":"/images/JSeNEXT.png",
         "description":"Forma de programa a sua página mais fácil",
         "rating":"8.0"
     }
