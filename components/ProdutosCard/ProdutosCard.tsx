@@ -3,7 +3,7 @@ import Style from './ProdutosCard.module.css'
 import Image from 'next/image'
 
 
-export default function ProdutosCard({id, title, price, description, image}:Produtos) {
+export default function ProdutosCard({title, price, description, image}:Produtos) {
 
     return <>
       <article className={Style.article}>
