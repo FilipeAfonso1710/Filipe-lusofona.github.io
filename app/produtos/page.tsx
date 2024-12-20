@@ -1,30 +1,65 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import useSWR from 'swr'
 import ProdutosCard from '@/components/ProdutosCard/ProdutosCard'
 
-
 export default function Page() {
 
-  //fun para passar a string da API para json
+  // Hooks
+  const [filteredData, setFilteredData] = useState<Produtos[]>([])
+  const [search, setSearch] = useState("")
+
+  // Função para passar a string da API para JSON
   const fetcher = (url: string) => fetch(url).then(res => res.json())
 
-  //Codigo para pegar os produtos na API
+  // Código para pegar os produtos na API
   const { data, error, isLoading } = useSWR<Produtos[], Error>('https://deisishop.pythonanywhere.com/products/', fetcher)
-  if (error) return <div>Erro while loading</div>
-  if (isLoading) return <div>Loading...</div>
-  if (!data) return <div>No data found :[</div>
 
-  return <>
-    {data.map(produto => (
-      <ProdutosCard
-        key={produto.id}
-        title={produto.title}
-        description={produto.description} 
-        id={produto.id} 
-        price={produto.price}
-         image={produto.image} />
-    ))}
-  </>
+  //adicionar produtos ao carrinho
+  const [cart, setCart] = useState<Produtos[]>([])
+
+  // Atualizar array de produtos com os produtos da API e o search
+  useEffect(() => {
+    if (data) {
+      const newFilteredData = data.filter((product) => {
+        return product.title.toLowerCase().includes(search.toLowerCase())
+      })
+      setFilteredData(newFilteredData)
+    }
+  }, [search, data])
+
+  useEffect(() => {
+    (product: Produtos) => {
+      setCart((prevCart) => [...prevCart, product]);
+
+    }
+  })
+
+
+  return (
+    <>
+      <input
+        placeholder="Pesquisar"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+
+      {error && <div>Erro while loading</div>}
+      {isLoading && <div>Loading...</div>}
+      {!data && <div>No data found :[</div>}
+
+      {filteredData.map(produto => (
+        <ProdutosCard
+          key={produto.id}
+          title={produto.title}
+          description={produto.description}
+          id={produto.id}
+          price={produto.price}
+          image={produto.image}
+          
+        />
+      ))}
+    </>
+  )
 }
