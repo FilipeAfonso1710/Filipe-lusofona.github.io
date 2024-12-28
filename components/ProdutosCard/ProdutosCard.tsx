@@ -3,8 +3,9 @@ import Style from './ProdutosCard.module.css'
 import Image from 'next/image'
 
 
-export default function ProdutosCard({title, price, description, image}:Produtos) {
-  
+
+export default function ProdutosCard({title, price, description, image, adicionarCarrinho}:Produtos & { adicionarCarrinho: ()=>void}) {
+
     return <>
 
       <article className={Style.article}>
@@ -17,7 +18,7 @@ export default function ProdutosCard({title, price, description, image}:Produtos
       height={150}
       />
       <p className={Style.p}>Preço: {price}€</p>
-      <button>Adicionar ao carrinho</button>
+      <button onClick={adicionarCarrinho}>Adicionar ao carrinho</button>
     </article>
     </>
   }

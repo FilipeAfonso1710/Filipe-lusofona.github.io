@@ -17,6 +17,9 @@ export default function Header() {
         <Link href={"tecnologias"}>
         tecnologias
         </Link>
+        <Link href={"carrinho"}>
+        carrinho
+        </Link>
     </nav>
   </header>
   )
