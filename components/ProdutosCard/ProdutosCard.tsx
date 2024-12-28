@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import Style from './ProdutosCard.module.css'
 import Image from 'next/image'
 
