@@ -6,4 +6,4 @@ interface Produtos {
     description:string
     image:string
     
-}
+};
