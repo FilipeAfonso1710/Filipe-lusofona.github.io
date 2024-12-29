@@ -80,7 +80,7 @@ export default function Page() {
       return response.json();
     }).then((data) => {
       alert("Compra realizada com sucesso:"),
-      alert(JSON.stringify(data, null, 2));
+        alert(JSON.stringify(data, null, 2));
       setCart([]); // Limpa o carrinho após a compra
     }).catch((error) => {
       console.error("Erro ao comprar:", error);
